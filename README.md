@@ -42,6 +42,32 @@ skills/
 2. Read `SKILL.md`
 3. Execute steps in the target environment
 
+## 一键安装到 Codex | Install To Codex
+
+默认安装本仓库全部技能到 `~/.codex/skills`（或 `$CODEX_HOME/skills`）：
+
+Install all skills into `~/.codex/skills` (or `$CODEX_HOME/skills`):
+
+```bash
+./scripts/install.sh
+```
+
+只安装单个技能：
+
+Install one skill only:
+
+```bash
+./scripts/install.sh --skill vpn-server-cli
+```
+
+安装到自定义目录（例如测试目录）：
+
+Install to a custom destination:
+
+```bash
+./scripts/install.sh --dest /tmp/codex-skills-test
+```
+
 ## 声明 | Notice
 
 本仓库内容仅用于个人学习、运维与安全研究，请遵守所在地法律法规与服务商条款。
